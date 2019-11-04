@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="post.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm" style="background-color: none;">
+    
+     <ul class="navbar-nav">
+      <li>
+      <button class="dropdownbtn"  id="btn1" data-toggle="dropdown" onclick="window.location.href='Homepage2.html'">
+        Home
+      </button>
+    </li>
+    <li>
+      <button class="dropdownbtn" id="btn2" data-toggle="dropdown" onclick="window.location.href='contact.html'">Contact</button>
+    </li>
+</ul>
+</nav>
+
+        <p id="abc"></p>
+        <p id="def"></p>
+      <p class="close"></p>
+          <p class="close"></p>
+
+<div class="post">
+  <div id="blogTitle" class="blogTite">
+        <h3 id="blogTitleNew" contenteditable="false" style="font-family: 'Bodoni MT'">
+            Story of Jeff Bezos</h3>
+      </div>
+      <p class="blogText" style = " font-family: 'French Script MT'; font-style: italic;font-size: 30px">Jeff Bezos</p>
+      <button id = "edit-save" onclick="EditSaveClicked()">Edit <i class="fa fa-edit"></i></button><br><br>
+      <div class="blogText">
+      <p id="blogBody" contenteditable="false" >
+            Bezos was born in Albuquerque, New Mexico, and raised in Houston, Texas. He graduated from Princeton University in 1986 with degrees in electrical engineering and computer science. He worked on Wall Street in a variety of related fields from 1986 to early 1994. He founded the online retailer Amazon in late 1994 on a cross-country road trip from New York City to Seattle. The company began as an online bookstore and has since expanded to a wide variety of other e-commerce products and services, including video and audio streaming, cloud computing, and artificial intelligence. It is currently the world's largest online sales company, the largest internet company by revenue, as well as the world's largest provider of AI assistance[citation needed] and cloud infrastructure services via its Amazon Web Services arm.
+      </p>
+    </div><br>
+    <div id = "footer-buttons">
+        <button class="likebtn" onclick="incLikes()"><i class="fa fa-thumbs-up">   Like</i>  </button>
+        <button class="dislikebtn" onclick="incdisLikes()"><i class="fa fa-thumbs-down">   Dislike</i>  </button><br>
+        <i id = "like-number-update">Be the first one to like this!</i> 
+        <i id = "dislike-number-update" style="margin-left: 450px;">Be the first one to dislike this!</i>  
+    </div>
+    <textarea rows="3" cols="60" placeholder="write comment here" style="margin-left: 90px;"></textarea><br>
+    <button class="commentbtn" type="submit">Comment</button>
+</div>
+<script type="text/javascript" src="post.js"></script>
+</body>
+</html>

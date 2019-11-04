@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="post.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm" style="background-color: none;">
+    
+     <ul class="navbar-nav">
+      <li>
+      <button class="dropdownbtn"  id="btn1" data-toggle="dropdown" onclick="window.location.href='Homepage2.html'">
+        Home
+      </button>
+    </li>
+    <li>
+      <button class="dropdownbtn" id="btn2" data-toggle="dropdown" onclick="window.location.href='contact.html'">Contact</button>
+    </li>
+</ul>
+</nav>
+
+        <p id="abc"></p>
+        <p id="def"></p>
+      <p class="close"></p>
+          <p class="close"></p>
+
+<div class="post">
+  <div id="blogTitle" class="blogTite">
+        <h3 id="blogTitleNew" contenteditable="false" style="font-family: 'Bodoni MT'">
+            Story of Robert Moss</h3>
+      </div>
+      <p class="blogText" style = " font-family: 'French Script MT'; font-style: italic;font-size: 30px">Robert Moss</p>
+      <button id = "edit-save" onclick="EditSaveClicked()">Edit <i class="fa fa-edit"></i></button><br><br>
+      <div class="blogText">
+      <p id="blogBody" contenteditable="false" >
+            Robert Moss, an Australian native, is a self ascribed dream teacher and blogger of dreams. His watershed moments in life came from near-death experiences, visionary dreams, and eventually learning from the Mohawk and shamanistic teachings. Moss currently runs seminars and courses on the idea of “active dreaming”. This way of dreaming involves lucid dreaming, interpretation, as well as “waking-life” application. This is all to say, Moss’s teaching and interpretation of dreams is deeply spiritual. As Moss puts it “I am a storyteller and I help people to find and live their bigger and braver stories, and tell them really well.”
+      </p>
+    </div><br>
+    <div id = "footer-buttons">
+        <button class="likebtn" onclick="incLikes()"><i class="fa fa-thumbs-up">   Like</i>  </button>
+        <button class="dislikebtn" onclick="incdisLikes()"><i class="fa fa-thumbs-down">   Dislike</i>  </button><br>
+        <i id = "like-number-update">Be the first one to like this!</i> 
+        <i id = "dislike-number-update" style="margin-left: 450px;">Be the first one to dislike this!</i>  
+    </div>
+    <textarea rows="3" cols="60" placeholder="write comment here" style="margin-left: 90px;"></textarea><br>
+    <button class="commentbtn" type="submit">Comment</button>
+</div>
+<script type="text/javascript" src="post.js"></script>
+</body>
+</html>
